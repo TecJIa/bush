@@ -119,7 +119,7 @@ date_time_log_last=$(echo $(date -d "${last_line} + 1 hours" "+%d/%b/%Y:%H:%M:%S
 #echo "$(sort -nk1,1 /home/pt/vagrant/send_mail/domain_pool.txt | uniq -c | sort -nrk1,1)" | head -n 4 >> /home/pt/vagrant/send_mail/1.txt
 
 
-#######echo "current_time=$(date +"%s")" > /home/pt/vagrant/send_mail/my_global_variable.txt # Записываем текущее время в секундах в глобал переменную РАСКОМЕНТИТЬ ПОСЛЕ РАБОТЫ
+echo "current_time=$(date +"%s")" > /home/pt/vagrant/send_mail/my_global_variable.txt # Записываем текущее время в секундах в глобал переменную ЗАКОМЕНТИТЬ ДЛЯ ДЕБАГА
 
 # удаляет файл блокировки
 rm -f ${lockfile} 
